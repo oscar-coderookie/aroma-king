@@ -1,0 +1,15 @@
+.template{
+    height: calc(100vh - 100px);
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-title{
+        text-transform: uppercase;
+        font-size: 40px;
+        color:white;
+        margin: 0;
+        text-align: center;
+    }
+}

@@ -1,0 +1,29 @@
+.searchbar{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding-top: 22px;
+    width: 80%;
+
+    &__input{
+        background-color: transparent; 
+        border: none;
+        width: 70%;  
+        color: #ffffff !important; 
+        border-bottom: 2px solid #dbdbdb !important; height: 40px; padding-right: 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        letter-spacing: 2px;
+        
+        &:focus{
+            border: none;
+            outline: none;
+        }
+
+    }
+    &__icon{
+        font-size: 40px;
+        color: white;
+        padding-left: 10px;
+    }
+}
