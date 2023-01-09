@@ -1,36 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+Oriya:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+Oriya:wght@400;500;600;700&display=swap");
 
+.header {
 
+    &-menu{
+        z-index: 100;
+    }
+  &-block {
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "Bebas Neue", cursive;
+    position: relative;
+    
+  }
+  &-logo {
+    height: 100px;
+    padding: 10px 0px 10px 0px;
+  }
+  &-icons {
+    display: flex;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+  }
+  &-icons__market {
+    filter: invert(1);
+    height: 30px;
+    cursor: pointer;
+  }
+  &-icons__language {
+    color: white;
+    margin-right: 20px;
+    font-size: 26px;
+  }
+  &-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 80;
+    background: rgba(26, 26, 26, 0.92);
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    padding: 40px;
+  }
+  &-nav__sections{
+    display:  flex;
+    flex-direction: column;
 
-.header{
-    &-block{
-        background: black;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-left: 20px;
-        padding-right: 20px;
-        font-family: 'Bebas Neue', cursive;
-    }
-    &-logo{
-        height: 100px;
-        padding: 10px 0px 10px 0px;
-    }
-    &-icons{
-        display: flex;
-        width: 100px;
-        align-items: center;
-        justify-content: center;
-    }
-    &-icons__market{
-        filter: invert(1);
-        height: 30px;
-        cursor: pointer;
-    }
-    &-icons__language{
-        color:white;
-        margin-right: 20px;
-        font-size: 26px;
-        
-    }
+  }
+  &-nav__links{
+    text-decoration: none;
+    color:white;
+    padding: 20px;
+  }
 }
