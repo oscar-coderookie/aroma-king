@@ -9,7 +9,6 @@ const Layout = () => {
       <Route path="/" element={<Template name="Home" />} />
       <Route path="/contact" element={<Template name="Contact" />} />
       <Route path="/about" element={<Template name="About Us" />} />
-      
       <Route path="/shop-cart" element={<Template name="Shoopping Cart" />} />
       <Route
         path="/catalogue/big-puffs"

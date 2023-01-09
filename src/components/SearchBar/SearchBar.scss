@@ -1,13 +1,23 @@
 .searchbar{
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content:space-between;
     padding-top: 22px;
     width: 80%;
+
+    &__btn{
+        background-color: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
 
     &__input{
         background-color: transparent; 
         border: none;
+        margin-left: 20px;
         width: 70%;  
         color: #ffffff !important; 
         border-bottom: 2px solid #dbdbdb !important; height: 40px; padding-right: 30px;
@@ -25,5 +35,12 @@
         font-size: 40px;
         color: white;
         padding-left: 10px;
+    }
+
+    @media (max-width: 1080px){
+        width: 90%;
+        &__input{
+            margin:0px 0px 0px 60px;
+        }
     }
 }

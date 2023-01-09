@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+Oriya:wght@400;500;600;700&display=swap");
 
 .header {
-
-    &-menu{
-        z-index: 100;
-    }
+  &-menu {
+    z-index: 100;
+  }
   &-block {
     background: linear-gradient(to bottom, #232526, #414345);
     display: flex;
@@ -12,10 +11,9 @@
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
-    font-family: "Bebas Neue", cursive;
+    font-family: "Bebas-Neue";
+    font-weight: 700;
     position: relative;
-    
-    
   }
   &-logo {
     height: 80px;
@@ -26,9 +24,10 @@
     width: 100px;
     align-items: center;
     justify-content: center;
+    
+  
   }
   &-icons__market {
-    filter: invert(1);
     height: 30px;
     cursor: pointer;
   }
@@ -49,82 +48,88 @@
     transition: all 0.4s ease-in-out;
     top: 0;
     z-index: 80;
-    background: rgba(26, 26, 26, 0.92);
+    background: rgba(14, 14, 14, 0.92);
     background-size: cover;
     backdrop-filter: blur(5px);
     text-transform: uppercase;
 
+    &__icons {
+      transition: all 0.3s ease;
+      &:hover{
+        filter: drop-shadow(0px 0px 8px white);
+      }
+    }
   }
-  &-nav__sections{
-    display:  flex;
+  &-nav__sections {
+    display: flex;
     flex-direction: column;
     padding: 40px 0px 40px 0px;
     width: 100%;
-
   }
-  &-nav__links{
+  &-nav__links {
     text-decoration: none;
-    color:white;
+    color: white;
     padding: 20px 0px 20px 0px;
     letter-spacing: 3px;
     width: 100%;
     transition: all 0.4s ease-in-out;
 
-    &:hover{
-        font-weight: 600;
-        background: rgba(255, 255, 255, 0.815);
-        color:rgb(0, 0, 0);
-        
+    &:hover {
+      font-weight: 600;
+      background: rgba(255, 255, 255, 0.815);
+      color: rgb(0, 0, 0);
     }
   }
-  &__submenu{
+  &__submenu {
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
 
-    &__title{
+    &__title {
       text-decoration: none;
-      color:white;
+      padding-top: 10px;
+      color: rgba(255, 255, 255, 0.836);
+      margin: 0;
+      height: 30px;
       letter-spacing: 3px;
       width: 100%;
       transition: all 0.4s ease-in-out;
-  
+      
+      &:hover{
+        font-weight: 600;
+        background: rgba(189, 189, 189, 0.815);
+        color: rgb(0, 0, 0);
+      }
     }
-    &__links{
+    &__links {
       text-decoration: none;
       margin: 0;
       padding: 0;
-      color:white;
+      color: white;
       padding: 10px 0px 10px 0px;
       letter-spacing: 3px;
       font-size: 14px;
       width: 100%;
       transition: all 0.4s ease-in-out;
 
-      &:hover{
+      &:hover {
         font-weight: 600;
         background: rgba(255, 255, 255, 0.815);
-        color:rgb(0, 0, 0);
-        
-    }
-    }
-  }
-
-  &-nav__icons{
-    font-size: 40px;
-    color:white;
-    padding: 20px;
-    transition: all 0.3s ease-in;
-
-    &:hover{
-        filter: drop-shadow(0px 0px 10px white) 
+        color: rgb(0, 0, 0);
+      }
     }
   }
   @media (max-width: 1080px) {
-    &-nav{
-      width: 100%;
+    &-block {
+      padding: 0px 14px 0px 10px;
     }
-    
+    &-nav {
+      width: 100%;
+
+      &__icons {
+        padding: 0;
+      }
+    }
   }
 }
