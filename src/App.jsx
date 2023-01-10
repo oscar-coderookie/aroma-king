@@ -1,12 +1,13 @@
 import "./App.scss";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Header } from "./components";
+import { Header, Footer } from "./components";
 import Template from "./pages/Template/Template";
+import Homepage from "./pages/Homepage/Homepage";
 
 const Layout = () => {
   return (
     <Routes>
-      <Route path="/" element={<Template name="Home" />} />
+      <Route path="/" element={<Homepage/>} />
       <Route path="/contact" element={<Template name="Contact" />} />
       <Route path="/about" element={<Template name="About Us" />} />
       <Route path="/shop-cart" element={<Template name="Shoopping Cart" />} />
@@ -25,6 +26,7 @@ function App() {
       <div className="app">
         <Header />
         <Layout />
+        <Footer/>
       </div>
     </Router>
   );

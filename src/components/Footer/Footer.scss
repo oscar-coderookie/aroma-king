@@ -1,0 +1,33 @@
+.footer-block {
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  background: linear-gradient(to bottom, #000000, #3b3b3b);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  &__logo {
+    height: 100px;
+    padding-left: 30px;
+  }
+  &__section2 {
+    width: 30%;
+    p {
+      color: white;
+      font-weight: 200;
+      font-size: 14px;
+    }
+  }
+  &__menu {
+    margin:0;
+    padding-right: 30px;
+  }
+  &__items {
+    color: white;
+    line-height: 1.5;
+    font-weight: 200;
+    font-size: 14px;
+    list-style: none;
+    text-align: left;
+  }
+}

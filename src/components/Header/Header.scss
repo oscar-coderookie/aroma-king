@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+Oriya:wght@400;500;600;700&display=swap");
 
 .header {
-  &-menu {
-    z-index: 100;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  &-menu { 
+    z-index: 120;
+   
   }
   &-block {
-    background: linear-gradient(to bottom, #232526, #414345);
+    background: linear-gradient(to bottom, #000000, #3b3b3b);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -47,7 +51,7 @@
     position: absolute;
     transition: all 0.4s ease-in-out;
     top: 0;
-    z-index: 80;
+    z-index: 90;
     background: rgba(14, 14, 14, 0.92);
     background-size: cover;
     backdrop-filter: blur(5px);

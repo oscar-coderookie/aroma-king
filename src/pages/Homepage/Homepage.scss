@@ -1,0 +1,31 @@
+.homepage {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  &__section2 {
+    height: 100vh;
+    background: url("https://firebasestorage.googleapis.com/v0/b/aroma-king-web.appspot.com/o/home-images%2Fhome-2.jpg?alt=media&token=ba99ebab-ee0e-47e0-9841-9030502066b1");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Montserrat";
+    position: relative;
+  
+
+    h2 {
+      font-weight: 400;
+      width: 50%;
+      font-size: 26px;
+    }
+  }
+  &__subtitle {
+    bottom:0;
+    text-align: center;
+    width: 100%;
+    font-weight: 400;
+    font-size: 26px;
+    padding-bottom: 20px;
+    position: absolute;
+  }
+}
