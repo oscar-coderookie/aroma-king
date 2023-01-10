@@ -1,6 +1,6 @@
 import React from "react";
 import './NavSocial.scss';
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const NavSocial = () => {
   return (
@@ -19,6 +19,13 @@ const NavSocial = () => {
         rel="noreferrer"
       >
         <FaInstagram className="nav__icons" />
+      </a>
+      <a
+        href=""
+        target="_blank"
+        rel="noreferrer"
+      >
+        <FaWhatsapp className="nav__icons" />
       </a>
     </div>
   );

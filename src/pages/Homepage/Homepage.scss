@@ -28,4 +28,24 @@
     padding-bottom: 20px;
     position: absolute;
   }
+  @media (max-width: 768px) {
+    &__section2{
+      background: url('https://firebasestorage.googleapis.com/v0/b/aroma-king-web.appspot.com/o/home-images%2Fmobile%2Fhome-2-mobile7.jpg?alt=media&token=e5cdf61e-96d8-4d44-a5dd-b8ff614826d0');
+      height: 100vh;
+      background-size: cover;
+      justify-content: space-between;
+      flex-direction: column;
+
+      h2{
+        width: 90%;
+        padding-top: 50px;
+        font-size: 24px;
+      }
+    }
+    &__subtitle{
+      display: flex;
+      position: inherit;
+      padding-bottom: 80px;
+    }
+  }
 }

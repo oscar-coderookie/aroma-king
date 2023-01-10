@@ -14,6 +14,7 @@ const Header = () => {
   const menuLinks = [
     { name: "About us", url: "/about" },
     { name: "Contact", url: "/contact" },
+    { name: "Dealers", url:"/dealers"}
   ];
 
   return (

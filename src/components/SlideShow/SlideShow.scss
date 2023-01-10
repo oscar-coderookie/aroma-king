@@ -1,8 +1,12 @@
 .slideshow{
-height: 100%;
-width: 100%;
-    img{
-        width: 100%;
-        object-position: center;
-    }
+height: 100vh;
+background: url('https://firebasestorage.googleapis.com/v0/b/aroma-king-web.appspot.com/o/home-images%2Fhome-1.png?alt=media&token=3813f1ce-4762-44da-9bf3-7198b4cf674a');
+background-size: cover;
+background-position: center;
+
+@media (max-width: 768px) {
+    background: url('https://firebasestorage.googleapis.com/v0/b/aroma-king-web.appspot.com/o/home-images%2Fmobile%2Fhome-1-mobile.jpg?alt=media&token=9c875e69-e219-4565-9bc9-c3a914b093ac');
+    height: 100vh;
+    background-size: cover;
+}
 }

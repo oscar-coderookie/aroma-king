@@ -1,0 +1,39 @@
+.contact-page{
+    height: 100vh;
+    padding-top: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    h1{
+        font-weight: 600;
+    }
+    &__block{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding-top: 30px;
+        justify-content: space-around;
+    }
+
+    &__info{
+        width: 40%;
+        h2{
+            text-align: center;
+            width: 100%;
+            font-weight: 500;
+            margin: 0;
+        }
+        p{
+            text-align: left;
+        }
+
+    }
+    &__separator{
+        width: 6px;
+        height: 70%;
+        background: black;
+    
+    }
+}

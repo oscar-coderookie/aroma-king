@@ -5,10 +5,12 @@ const img1 = "https://firebasestorage.googleapis.com/v0/b/aroma-king-web.appspot
 
 const img2 = "https://firebasestorage.googleapis.com/v0/b/aroma-king-web.appspot.com/o/home-images%2FSTANDARD%20EDITION.jpg?alt=media&token=34880435-f6e4-474a-baed-fe088f76e547"
 
+
+
 const SlideShow = () => {
   return (
     <div className="slideshow">
-      <img src={img1} alt="img1" />
+      
     </div>
   );
 };
