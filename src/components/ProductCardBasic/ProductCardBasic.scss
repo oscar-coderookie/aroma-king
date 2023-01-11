@@ -1,5 +1,5 @@
 .tpdCard {
-    width: 350px;
+    
     padding: 60px 0px 60px 0px;
     display: flex;
     align-items: center;
@@ -16,6 +16,7 @@
     &__capacity {
       margin: 0;
       font-size: 14px;
+      color: rgb(100, 100, 100);
     }
   
     &__img {

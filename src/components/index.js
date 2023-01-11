@@ -4,6 +4,7 @@ import SearchBar from "./SearchBar/SearchBar";
 import NavSocial from "./NavSocial/NavSocial";
 import SlideShow from "./SlideShow/SlideShow";
 import ProductCardBasic from "./ProductCardBasic/ProductCardBasic";
+import LoadingScreen from "./LoadingScreen/LoadingScreen";
 
 export {
     Header,
@@ -11,5 +12,6 @@ export {
     SearchBar,
     NavSocial,
     SlideShow,
-    ProductCardBasic
+    ProductCardBasic,
+    LoadingScreen
 }
