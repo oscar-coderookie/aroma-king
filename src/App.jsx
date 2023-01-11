@@ -4,6 +4,7 @@ import { Header, Footer } from "./components";
 import Template from "./pages/Template/Template";
 import Homepage from "./pages/Homepage/Homepage";
 import ContactPage from "./pages/ContactPage/ContactPage";
+import TpdCatalogue from "./pages/TpdCatalogue/TpdCatalogue";
 
 const Layout = () => {
   return (
@@ -16,7 +17,7 @@ const Layout = () => {
         path="/catalogue/big-puffs"
         element={<Template name="Big Puffs Catalogue" />}
       />
-      <Route path="/catalogue/tpd" element={<Template name="TPD Catalogue" />} />
+      <Route path="/catalogue/tpd" element={<TpdCatalogue />} />
     </Routes>
   );
 };

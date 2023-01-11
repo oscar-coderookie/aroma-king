@@ -5,7 +5,7 @@
   width: 100%;
   z-index: 100;
   &-menu { 
-    z-index: 120;
+    z-index: 150;
    
   }
   &-block {
@@ -20,7 +20,7 @@
     position: relative;
   }
   &-logo {
-    height: 80px;
+    height: 60px;
     padding: 10px 0px 10px 0px;
   }
   &-icons {
