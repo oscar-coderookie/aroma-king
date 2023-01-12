@@ -5,6 +5,11 @@
   flex-wrap: wrap;
   width: 100%;
 
+  &__links{
+    text-decoration: none;
+    color: black;
+  }
+
   @media (max-width: 475px) {
     padding-top: 10px;
     padding-bottom: 40px;

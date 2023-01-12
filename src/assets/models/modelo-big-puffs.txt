@@ -1,0 +1,11 @@
+modelo de documento:vapping big puffs
+
+name:string
+urlImg:string
+capacity:string
+batteryCapacity:number
+liquidCapacity:number
+nicotineLevel: number
+coil: string
+resistance:number
+batteryMaterial: string

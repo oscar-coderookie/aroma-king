@@ -6,7 +6,9 @@ import Homepage from "./pages/Homepage/Homepage";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import TpdCatalogue from "./pages/TpdCatalogue/TpdCatalogue";
 import BigPuffs from "./pages/BigPuffs/BigPuffs";
-import BigPuffDetail from "./pages/CatalogueDetail/BigPuffDetail";
+import BigPuffDetail from "./pages/BigPuffDetail/BigPuffDetail";
+import TpdDetail from "./pages/TpdDetail/TpdDetail";
+
 
 const Layout = () => {
   return (
@@ -19,11 +21,17 @@ const Layout = () => {
         path="/catalogue/big-puffs"
         element={<BigPuffs />}
       />
+      <Route path="/catalogue/tpd" element={<TpdCatalogue />} />
       <Route
         path="/catalogue/big-puffs/:id"
         element={<BigPuffDetail />}
       />
-      <Route path="/catalogue/tpd" element={<TpdCatalogue />} />
+
+      <Route
+        path="/catalogue/tpd/:id"
+        element={<TpdDetail />}
+      />
+      
     </Routes>
   );
 };

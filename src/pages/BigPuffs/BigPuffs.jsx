@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, orderBy } from "firebase/firestore";
 import "./BigPuffs.scss";
 import { db } from "../../config/firebase";
 import { LoadingScreen, ProductCardBasic } from "../../components";
@@ -48,7 +48,7 @@ const BigPuffs = () => {
                     
                     urlImg={element.urlImg}
                     name={element.name}
-                    capacity={element.capacity}
+                    capacity={`${element.capacity}+ Puffs`}
                     size="300px"
                   />
                 </NavLink>
