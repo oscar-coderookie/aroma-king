@@ -1,0 +1,13 @@
+.big-puff{
+    &__flavors{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &__img{
+            width: 250px;
+            padding: 30px;
+        }
+    }
+}

@@ -6,6 +6,7 @@ import { db } from "../../config/firebase";
 
 const TpdDetail = () => {
   const [tpd, setTpd] = useState({});
+  const [flavors, setFlavors] = useState([]);
   const { id } = useParams();
 
   const docRef = doc(db, "TPD-AROMA-KING", id);
@@ -14,12 +15,14 @@ const TpdDetail = () => {
     try {
         getDoc(docRef).then((doc) => {
             setTpd(doc.data(), doc.id);
-          }); 
+            setFlavors(doc.data().flavors);
+          })
+          
     } catch (error) {
         console.log(error)
     }
-   
   }, [docRef]);
+
 
   return (
     <div className="big-puff">
@@ -72,6 +75,13 @@ const TpdDetail = () => {
       </div>
       <h3 className="big-puff__title">Other flavours:</h3>
       <div className="big-puff__separator"></div>
+      <div className="big-puff__flavors">
+      {flavors === undefined ? null : flavors.map((flavor, index) => {
+        return (
+          <img key={index} className="big-puff__flavors__img" src={flavor} alt={flavor} />
+        )
+      })}
+      </div>
     </div>
   );
 };

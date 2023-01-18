@@ -45,7 +45,6 @@ const Header = () => {
       </div>
       {open === false ? null : (
         <nav className="header-nav">
-          <SearchBar />
           <div className="header-nav__sections">
             {ubication === "/" ? null : (
               <NavLink
@@ -56,7 +55,7 @@ const Header = () => {
                 Home
               </NavLink>
             )}
-            <p className="header__submenu__title">Catalogue:</p>
+            <p className="header__submenu__title">Products:</p>
             <ul className="header__submenu">
               <NavLink
                 to="/catalogue/big-puffs"

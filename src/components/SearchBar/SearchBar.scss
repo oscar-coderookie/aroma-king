@@ -1,46 +1,44 @@
-.searchbar{
+.searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+
+  &__btn {
+    background-color: transparent;
+    border: none;
     display: flex;
     align-items: center;
-    justify-content:space-between;
-    padding-top: 22px;
-    width: 80%;
+    justify-content: center;
+    cursor: pointer;
+  }
 
-    &__btn{
-        background-color: transparent;
-        border: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-    }
+  &__input {
+    background-color: transparent;
+    border: none;
+    margin-left: 20px;
+    width: 70%;
+    color: black;
+    height: 40px;
+    padding-right: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
 
-    &__input{
-        background-color: transparent; 
-        border: none;
-        margin-left: 20px;
-        width: 70%;  
-        color: #ffffff !important; 
-        border-bottom: 2px solid #dbdbdb !important; height: 40px; padding-right: 30px;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 18px;
-        letter-spacing: 2px;
-        
-        &:focus{
-            border: none;
-            outline: none;
-        }
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+  &__icon {
+    font-size: 30px;
+    padding-left: 10px;
+  }
 
+  @media (max-width: 1080px) {
+    width: 90%;
+    &__input {
+      margin: 0px 0px 0px 60px;
     }
-    &__icon{
-        font-size: 40px;
-        color: white;
-        padding-left: 10px;
-    }
-
-    @media (max-width: 1080px){
-        width: 90%;
-        &__input{
-            margin:0px 0px 0px 60px;
-        }
-    }
+  }
 }
