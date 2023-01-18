@@ -8,6 +8,8 @@ import TpdCatalogue from "./pages/TpdCatalogue/TpdCatalogue";
 import BigPuffs from "./pages/BigPuffs/BigPuffs";
 import BigPuffDetail from "./pages/BigPuffDetail/BigPuffDetail";
 import TpdDetail from "./pages/TpdDetail/TpdDetail";
+import AboutUs from "./pages/AboutUs/AboutUs";
+import DealersPage from "./pages/DealersPage/DealersPage";
 
 
 const Layout = () => {
@@ -15,8 +17,9 @@ const Layout = () => {
     <Routes>
       <Route path="/" element={<Homepage/>} />
       <Route path="/contact" element={<ContactPage/>} />
-      <Route path="/about" element={<Template name="About Us" />} />
+      <Route path="/about" element={<AboutUs/>} />
       <Route path="/shop-cart" element={<Template name="Shoopping Cart" />} />
+      <Route path="/dealers" element={<DealersPage/>} />
       <Route
         path="/catalogue/big-puffs"
         element={<BigPuffs />}

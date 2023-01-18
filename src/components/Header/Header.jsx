@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Header.scss";
 import { NavLink } from "react-router-dom";
 import logoImg from "./../../assets/img/logo-blanco.png";
+import dealersLogo from './../../assets/img/dealers-logo.png';
 import { Slant as Hamburger } from "hamburger-react";
 import marketIcon from "./../../assets/img/market-icon-white.png";
 import SearchBar from "../SearchBar/SearchBar";
@@ -32,7 +33,7 @@ const Header = () => {
           ></Hamburger>
         </div>
 
-        <img className="header-logo" src={logoImg} alt="logo-aroma-king" />
+        {ubication === '/dealers' ? <img className="header-logo" src={dealersLogo} alt="logo-aroma-king" /> : <img className="header-logo" src={logoImg} alt="logo-aroma-king" />}
 
         <NavLink className="header-nav__icons" to="/shop-cart">
           <img

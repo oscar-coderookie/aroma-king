@@ -23,7 +23,7 @@ const TpdDetail = () => {
 
   return (
     <div className="big-puff">
-      <h3 className="big-puff__title">tpd / {tpd.name}</h3>
+      <h3 className="big-puff__title">tpd catalogue / {tpd.name}</h3>
       <div className="big-puff__separator"></div>
 
       <div className="big-puff__block">

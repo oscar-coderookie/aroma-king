@@ -1,0 +1,53 @@
+.about-us{
+    padding-top: 100px;
+    padding-bottom: 120px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    &__info{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    &__textblock{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+
+    }
+    &__text{
+        text-align: justify;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    &__title{
+        text-transform: capitalize;
+        font-family: 'Bebas Neue';
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+    &__subtitle{
+        text-transform: capitalize;
+        font-family: 'Bebas Neue';
+        padding-top: 30px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        margin: 0;
+    }
+    &__img{
+        width: 50%;
+    }
+    @media (max-width: 768px) {
+        &__textblock{
+            width: 90%;
+        }
+        &__img{
+            width: 90%;
+        }
+    }
+}
