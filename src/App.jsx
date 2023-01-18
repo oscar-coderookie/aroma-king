@@ -10,31 +10,21 @@ import BigPuffDetail from "./pages/BigPuffDetail/BigPuffDetail";
 import TpdDetail from "./pages/TpdDetail/TpdDetail";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import DealersPage from "./pages/DealersPage/DealersPage";
-
+import { CartContextProvider } from "./global/CartContext";
 
 const Layout = () => {
   return (
     <Routes>
-      <Route path="/" element={<Homepage/>} />
-      <Route path="/contact" element={<ContactPage/>} />
-      <Route path="/about" element={<AboutUs/>} />
+      <Route path="/" element={<Homepage />} />
+      <Route path="/contact" element={<ContactPage />} />
+      <Route path="/about" element={<AboutUs />} />
       <Route path="/shop-cart" element={<Template name="Shoopping Cart" />} />
-      <Route path="/dealers" element={<DealersPage/>} />
-      <Route
-        path="/catalogue/big-puffs"
-        element={<BigPuffs />}
-      />
+      <Route path="/dealers" element={<DealersPage />} />
+      <Route path="/catalogue/big-puffs" element={<BigPuffs />} />
       <Route path="/catalogue/tpd" element={<TpdCatalogue />} />
-      <Route
-        path="/catalogue/big-puffs/:id"
-        element={<BigPuffDetail />}
-      />
+      <Route path="/catalogue/big-puffs/:id" element={<BigPuffDetail />} />
 
-      <Route
-        path="/catalogue/tpd/:id"
-        element={<TpdDetail />}
-      />
-      
+      <Route path="/catalogue/tpd/:id" element={<TpdDetail />} />
     </Routes>
   );
 };
@@ -42,11 +32,13 @@ const Layout = () => {
 function App() {
   return (
     <Router>
-      <div className="app">
-        <Header />
-        <Layout />
-        <Footer/>
-      </div>
+      <CartContextProvider>
+        <div className="app">
+          <Header />
+          <Layout />
+          <Footer />
+        </div>
+      </CartContextProvider>
     </Router>
   );
 }
