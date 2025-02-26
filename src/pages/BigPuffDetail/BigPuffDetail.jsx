@@ -2,22 +2,36 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../../config/firebase";
+import { useCart } from "../../CartContext"; // Importar correctamente el contexto
 import "./BigPuffDetail.scss";
 
 const BigPuffDetail = () => {
   const [data, setData] = useState({});
   const [flavors, setFlavors] = useState([]);
+  const [quantity, setQuantity] = useState(1);
   const { id } = useParams();
+  const { addToCart } = useCart(); // Usar el contexto del carrito
 
   const docRef = doc(db, "BIG-PUFFS-AROMA-KING", id);
 
   useEffect(() => {
     getDoc(docRef).then((doc) => {
-      setData(doc.data(), doc.id);
-      setFlavors(doc.data().flavors);
+      if (doc.exists()) {
+        setData(doc.data());
+        setFlavors(doc.data().flavors);
+      }
     });
   }, [docRef]);
 
+  const handleAddToCart = () => {
+    addToCart({
+      id,
+      name: data.name,
+      price: data.price || 0, // Asegurar que hay un precio
+      image: data.urlImg,
+      quantity: quantity,
+    });
+  };
 
   return (
     <div className="big-puff">
@@ -72,14 +86,29 @@ const BigPuffDetail = () => {
           </div>
         </div>
       </div>
+      <label htmlFor="quantity">Quantity:</label>
+          <select
+            id="quantity"
+            value={quantity}
+            onChange={(e) => setQuantity(parseInt(e.target.value))}
+          >
+            {[...Array(10).keys()].map((num) => (
+              <option key={num + 1} value={num + 1}>
+                {num + 1}
+              </option>
+            ))}
+          </select>
+      <button className="add-to-cart-btn" onClick={handleAddToCart}>
+        🛒 Añadir al carrito
+      </button>
+
       <h3 className="big-puff__title">Other flavours:</h3>
       <div className="big-puff__separator"></div>
       <div className="big-puff__flavors">
-      {flavors === undefined ? null : flavors.map((flavor, index) => {
-        return (
-          <img key={index} className="big-puff__flavors__img" src={flavor} alt={flavor} />
-        )
-      })}
+        {flavors &&
+          flavors.map((flavor, index) => (
+            <img key={index} className="big-puff__flavors__img" src={flavor} alt={flavor} />
+          ))}
       </div>
     </div>
   );
