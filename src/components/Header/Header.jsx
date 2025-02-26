@@ -5,7 +5,6 @@ import logoImg from "./../../assets/img/logo-blanco.png";
 import dealersLogo from './../../assets/img/dealers-logo.png';
 import { Slant as Hamburger } from "hamburger-react";
 import marketIcon from "./../../assets/img/market-icon-white.png";
-import SearchBar from "../SearchBar/SearchBar";
 import NavSocial from "../NavSocial/NavSocial";
 
 const Header = () => {

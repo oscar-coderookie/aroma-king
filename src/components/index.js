@@ -6,6 +6,7 @@ import SlideShow from "./SlideShow/SlideShow";
 import ProductCardBasic from "./ProductCardBasic/ProductCardBasic";
 import LoadingScreen from "./LoadingScreen/LoadingScreen";
 
+
 export {
     Header,
     Footer, 
@@ -13,5 +14,6 @@ export {
     NavSocial,
     SlideShow,
     ProductCardBasic,
-    LoadingScreen
+    LoadingScreen,
+
 }

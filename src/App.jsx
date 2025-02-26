@@ -10,7 +10,8 @@ import BigPuffDetail from "./pages/BigPuffDetail/BigPuffDetail";
 import TpdDetail from "./pages/TpdDetail/TpdDetail";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import DealersPage from "./pages/DealersPage/DealersPage";
-import ShoppingCart from './pages/ShoppingCart/ShoppingCart'
+import ShoppingCart from './pages/ShoppingCart/ShoppingCart';
+import CartSidebar from "./components/CartSideBar/CartSideBar";
 
 
 const Layout = () => {
@@ -34,6 +35,7 @@ function App() {
     <Router>
         <div className="app">
           <Header />
+      
           <Layout />
           <Footer />
         </div>

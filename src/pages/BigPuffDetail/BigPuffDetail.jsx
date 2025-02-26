@@ -4,6 +4,7 @@ import { doc, getDoc } from "firebase/firestore";
 import { db } from "../../config/firebase";
 import { useCart } from "../../CartContext"; // Importar correctamente el contexto
 import "./BigPuffDetail.scss";
+import { FaShoppingBasket } from "react-icons/fa";
 
 const BigPuffDetail = () => {
   const [data, setData] = useState({});
@@ -86,7 +87,9 @@ const BigPuffDetail = () => {
           </div>
         </div>
       </div>
-      <label htmlFor="quantity">Quantity:</label>
+      <div className="shop-bar">
+        <div className="quantity-bar">
+          <label htmlFor="quantity">Quantity:</label>
           <select
             id="quantity"
             value={quantity}
@@ -98,9 +101,14 @@ const BigPuffDetail = () => {
               </option>
             ))}
           </select>
-      <button className="add-to-cart-btn" onClick={handleAddToCart}>
-        🛒 Añadir al carrito
-      </button>
+        </div>
+
+        <button className="add-to-cart-btn" onClick={handleAddToCart}>
+          Add to Cart
+          <FaShoppingBasket className="shop-btn" />
+        </button>
+      </div>
+
 
       <h3 className="big-puff__title">Other flavours:</h3>
       <div className="big-puff__separator"></div>
