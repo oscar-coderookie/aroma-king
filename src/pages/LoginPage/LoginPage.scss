@@ -1,0 +1,33 @@
+.submit__btn{
+    width: 100%;
+    padding: 16px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(192, 192, 192);
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all ease-in-out 0.4s;
+
+    &:hover{
+        background: black;
+        color: white;
+    }
+}
+.auth-title{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.login-form{
+    width: 900px;
+    max-width: 350px;
+}
+.form-fieldset{
+    display: flex;
+    border: none;
+    justify-content: space-between;
+}
+.form-input{
+    border: none;
+    border-bottom: 1px solid gray;
+}

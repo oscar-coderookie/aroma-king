@@ -1,8 +1,10 @@
 .shopping-cart {
-  max-width: 1200px;
-  margin: 40px auto;
   padding: 20px;
   background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   border-radius: 12px;
   padding-top: 200px;
   padding-bottom: 200px;

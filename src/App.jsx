@@ -11,7 +11,8 @@ import TpdDetail from "./pages/TpdDetail/TpdDetail";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import DealersPage from "./pages/DealersPage/DealersPage";
 import ShoppingCart from './pages/ShoppingCart/ShoppingCart';
-import CartSidebar from "./components/CartSideBar/CartSideBar";
+import RegisterPage from "./pages/RegisterPage/RegisterPage";
+import LoginPage from "./pages/LoginPage/LoginPage";
 
 
 const Layout = () => {
@@ -21,6 +22,8 @@ const Layout = () => {
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/about" element={<AboutUs />} />
       <Route path="/shop-cart" element={<ShoppingCart/>} />
+      <Route path="/register" element={<RegisterPage/>} />
+      <Route path="/login" element={<LoginPage/>} />
       <Route path="/dealers" element={<DealersPage />} />
       <Route path="/catalogue/big-puffs" element={<BigPuffs />} />
       <Route path="/catalogue/tpd" element={<TpdCatalogue />} />
